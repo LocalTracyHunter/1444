@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<INPUT type="button" class = "buttonstyle" value="Window" OnClick="alert(window.status);">
+<INPUT type="button" class = "buttonstyle"value="Navigator" OnClick="alert(navigator.appVersion);">
+<INPUT type="button" class = "buttonstyle" value="Location" OnClick="alert(location.href	);">
+<INPUT type="button" class = "buttonstyle" value="Screen" OnClick="alert('Размер экрана: ' + screen.width + ' x ' + screen.height);">
+
+
+<style>
+  .image {
+    position: absolute;
+    margin: 100px 0px 0px  300px;
+    width: 30%;
+    height: 30%;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Эволюция винила</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <script type="text/javascript">alert(document.lastModified)
+function changeStyle() {
+      var p = document.getElementById("second");
+      p.style.paddingRight = "3cm";
+      p.style.textIndent = "2.5cm";
+    }
+
+    function restoreStyle() {
+      var p = document.getElementById("second");
+      p.style.paddingRight = "1.5cm";
+      p.style.textIndent = "0.7cm";
+    }
+function hideMiddleImage() {
+  var middleImage = document.getElementsByName("image2")[0];
+  middleImage.style.display = "none";
+}
+
+function showMiddleImage() {
+  var middleImage = document.getElementsByName("image2")[0];
+  middleImage.style.display = "block";
+}
+
+function swapLayers() {
+  var topImage = document.getElementsByName("image1")[0];
+  var bottomImage = document.getElementsByName("image3")[0];
+  
+  var tempZIndex = topImage.style.zIndex;
+  topImage.style.zIndex = bottomImage.style.zIndex;
+  bottomImage.style.zIndex = tempZIndex;
+}
+
+// Функция для переключения стиля при наведении и отведении мыши
+    function toggleCellStyle(cell) {
+      if (cell.classList.contains("table-cell")) {
+        cell.className = "table-cell-alternate";
+      } else {
+        cell.className = "table-cell";
+      }
+  }
+
+
+</script>
+</head>
+
+<body>
+&nbsp;<div class="text">
+    <main>
+     <h1>Эволюция виниловых проигрывателей</h1>
+         <font onmouseover="this.style.color='red';this.style.fontFamily='Verdana'" onmouseout="this.style.color='black'; this.style.fontFamily='Times New Roman'; this.style.fontSize='13pt'"><p>Электропроигрыватели появились в конце 1920-х годов. Ранние электропроигрыватели были рассчитаны на воспроизведение монофонических записей и оснащались электромагнитными звукоснимателями. В качестве игл использовались обычные граммофонные; их необходимо было менять после каждого проигрывания записи.</font> <br> </p>
+ 
+	        <p id="second" onmouseover="changeStyle()" onmouseout="restoreStyle()">По качеству звучания уже первые электропроигрыватели превосходили современные им граммофоны и патефоны за счёт использования электронных усилителей сигнала. К тому же головки звукоснимателя у электропроигрывателей были легче, что меньше изнашивало пластинки и продлевало срок их службы. Основными недостатками электропроигрывателей были необходимость использования внешнего усилителя и громкоговорителя и, разумеется, потребность в электричестве. В 20-е — 30-е годы это существенно ограничивало сферу их применения. Также электропроигрыватели были гораздо дороже механических устройств для воспроизведения грамзаписей.
+<br> </p>
+
+	<p>Современность проигрывателей<br> </p>
+
+	<p>Электропроигрыватели наряду с электрофонами продолжают использоваться для воспроизведения грампластинок, в основном любителями ретро и аудиофилами. Последние, как правило, уже имеют устраивающий их усилитель мощности, поэтому электропроигрыватели предпочтительнее для них, нежели электрофоны со встроенным усилителем — скорее всего, более низкого качества.
+Также электропроигрыватели по-прежнему являются одним из основных инструментов работы ди-джеев, практикующих вращение диска руками в такт ритму и использующих различные приёмы проигрывания, например скретчинг. Диджейские электропроигрыватели позволяют производить мгновенные остановки и пуски с определённого места и допускают проигрывание при вращении пластинки в обратном направлении. <br> </p>
+
+	
+  
+        </details>&nbsp;<h2>5 Плюсов слушать винил</h2>
+          <p class="news"><span class="date">1 плюс -  </span>Виниловые записи обладают неповторимым звучанием</p>
+          <p class="news"><span class="date">2 плюс -  </span>Увлечение винилом доставляет эстетическое удовольствие</p>
+          <p class="news"><span class="date">3 плюс -  </span>На виниле издаются почти все значимые релизы</p>
+          <p class="news"><span class="date">4 плюс -  </span>Проигрыватель винила — стильный предмет интерьера</p>
+          <p class="news"><span class="date">5 плюс - </span>Коллекционирование пластинок вновь сделает музыку ценной</p>
+          
+	<table>
+        <tr>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+        </tr>
+        <tr>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Винил</td>
+        </tr>
+      </table>
+     
+<button class = "buttonstyle" onclick="hideMiddleImage()">Скрыть рисунок</button>
+<button class = "buttonstyle" onclick="showMiddleImage()">Показать рисунки</button>
+<button class = "buttonstyle" onclick="swapLayers()">Поменять картинки</button>
+
+<img src="image1.jpg" class="image" style="z-index: 3;"img.style.paddingLeft="1.5cm"; name="image1" >
+<img src="image2.jpg" class="image" style="z-index: 2;"img.style.paddingLeft="1.5cm"; name="image2">
+<img src="image3.jpg" class="image" style="z-index: 1;"img.style.paddingLeft="1.5cm"; name="image3">
+
+</main>
+</div> 
+</body>
+</html>
